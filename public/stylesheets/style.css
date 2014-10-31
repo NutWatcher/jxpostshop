@@ -1,0 +1,27 @@
+body {
+    margin: 0 auto;
+    width: 1000px;
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+  text-decoration: none;
+  font: tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;
+}
+.goods-li{
+    float: left;
+    width: 247px;
+}
+ul{
+    list-style: none;
+}
+.lh-wrap{
+    width: 200px;
+}
+.p-name {
+    height: 3em;
+    word-wrap: break-word;
+    overflow: hidden;
+}
