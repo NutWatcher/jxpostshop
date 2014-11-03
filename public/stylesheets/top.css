@@ -1,32 +1,52 @@
-.top-div{
+.top-div {
     position: fixed;
     top: 1px;
     background: #f5f5f5;
     width: 1000px;
     height: 35px;
 }
-.top-ul-l{
+
+.top-ul-l {
     float: left;
     list-style: none;
-    padding: 0 ;
-    margin:  0;
+    padding: 0;
+    margin: 0;
 }
-.top-ul-r{
+
+.top-ul-r {
     display: inline;
     float: right;
-    padding: 0 ;
-    margin:  0;
+    padding: 0;
+    margin: 0;
 }
-.top-div ul li{
+
+.top-div > ul > li {
     float: left;
 }
-.top-content-div{
+
+.top-content-div {
     padding: 0 6px;
     height: 35px;
     width: 100px;
 }
 
-.top-content-div a{
+.top-content-div > a {
     line-height: 35px;
 }
+
+.top-content-div-car {
+    width: 300px;
+    min-height: 40px;
+    padding: 8px;
+    border: 1px solid gold;
+}
+
+.top-content-div-car > ul {
+    border-bottom: 1px solid #eee;
+}
+
+.top-content-div-car > ul > li {
+    margin-bottom: 10px;
+}
+
 

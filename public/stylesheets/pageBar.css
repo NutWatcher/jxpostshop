@@ -1,0 +1,33 @@
+.page-bar-page , .page-bar-count, .page-bar-form, .page-num-wrap{
+    float: left;
+    line-height: 36px;
+    color: #999;
+}
+.page-bar-count {
+    margin: 0 15px 0 30px;
+}
+.page-wrap{
+    float: left;
+}
+.page-num-wrap{
+    display: inline;
+}
+.page-next span {
+    float: right;
+    margin: 14px 7px 0 0;
+    _position: absolute;
+    _left: 60px;
+    _top: 0;
+    _line-height: 0;
+}
+.page-num {
+    position: relative;
+    width: 45px;
+    border: 1px solid #DEDEDE;
+    line-height: 18px;
+    color: #9D9D9D;
+    font-size: 14px;
+    text-align: center;
+    height: 18px;
+    outline: 0;
+}

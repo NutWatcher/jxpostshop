@@ -16,7 +16,7 @@ exports.getGoodsList = function(req, res){
         }
         else {
             console.info(data);
-            res.render('shopList', { goods: data });
+            res.render('shopList', { title: '首页' ,goods: data });
         }
     });
 };
