@@ -6,17 +6,17 @@
 <div id="plist" class="m plist-n7 prebuy">
     <ul class="list-h">
         <% for(var i = 0; i < goods.length; i++) { %>
-        <li class="">
+        <li class="goods-li">
             <div class="lh-wrap">
                 <div class="p-img">
                     <a target="_blank"
-                       href="http://item.jd.com/934060.html">
+                       href="<%= goods[i].href%>">
                         <img width="220px" height="220px" src="<%= goods[i].image %>"/>
                     </a>
                 </div>
                 <div class="p-name">
                     <a target="_blank"
-                       href="http://item.jd.com/934060.html">
+                       href="<%= goods[i].href%>">
                         <%= goods[i].name %>
                     </a>
                 </div>
@@ -24,64 +24,6 @@
             </div>
         </li>
         <% } %>
-        <li index="3" sku="572758" selfservice="0" venderid="0" class="">
-            <div class="lh-wrap">
-                <div class="p-img"><a target="_blank" href="http://item.jd.com/572758.html"
-                                      onclick="log(&quot;search&quot;,&quot;list&quot;,window.location.href,9898,5,572758,1,3,1,2,A)"><img
-                                width="220" height="220" alt="Philips飞利浦 30074 酷捷LED护眼台灯银色" data-img="1"
-                                class="err-product"
-                                src="http://img12.360buyimg.com/n7/4889/b3542b90-ffea-4e65-af57-252c1672ad10.jpg"
-                                title="经典爆款,低价来袭！大品牌质量保证"></a></div>
-                <div class="p-scroll"><a href="javascript:;" class="p-scroll-btn p-scroll-prev">&lt;</a>
-
-                    <div class="p-scroll-wrap">
-
-                    </div>
-                    <a href="javascript:;" class="p-scroll-btn p-scroll-next">&gt;</a></div>
-                <div class="p-name"><a target="_blank" href="http://item.jd.com/572758.html"
-                                       onclick="log(&quot;search&quot;,&quot;list&quot;,window.location.href,9898,5,572758,2,3,1,2,A)"
-                                       title="经典爆款,低价来袭！大品牌质量保证">Philips飞利浦 30074 酷捷LED护眼台灯银色<font
-                                style="color: #ff0000;" name="572758" class="adwords">经典爆款,低价来袭！大品牌质量保证</font></a></div>
-                <div class="p-price"><strong>￥269.00</strong><span id="p572758"></span></div>
-                <div class="extra"><span class="evaluate"><a target="_blank"
-                                                             href="http://item.jd.com/572758.html#comments-list"
-                                                             onclick="log(&quot;search&quot;,&quot;list&quot;,window.location.href,9898,5,572758,3,3,1,2,A)">已有16538人评价</a></span>
-                </div>
-                <div stock="572758" class="stocklist"><span class="st33">北京有货</span></div>
-                <div class="product-follow hide" style="display: none;"><a id="coll572758"
-                                                                           class="btn-coll"><s></s>加关注</a></div>
-                <div class="shop-name" style="display: none;"></div>
-            </div>
-        </li>
-        <li index="3" sku="572758" selfservice="0" venderid="0" class="">
-            <div class="lh-wrap">
-                <div class="p-img"><a target="_blank" href="http://item.jd.com/572758.html"
-                                      onclick="log(&quot;search&quot;,&quot;list&quot;,window.location.href,9898,5,572758,1,3,1,2,A)"><img
-                                width="220" height="220" alt="Philips飞利浦 30074 酷捷LED护眼台灯银色" data-img="1"
-                                class="err-product"
-                                src="http://img12.360buyimg.com/n7/4889/b3542b90-ffea-4e65-af57-252c1672ad10.jpg"
-                                title="经典爆款,低价来袭！大品牌质量保证"></a></div>
-                <div class="p-scroll"><a href="javascript:;" class="p-scroll-btn p-scroll-prev">&lt;</a>
-
-                    <div class="p-scroll-wrap">
-
-                    </div>
-                    <a href="javascript:;" class="p-scroll-btn p-scroll-next">&gt;</a></div>
-                <div class="p-name"><a target="_blank" href="http://item.jd.com/572758.html"
-                                       onclick="log(&quot;search&quot;,&quot;list&quot;,window.location.href,9898,5,572758,2,3,1,2,A)"
-                                       title="经典爆款,低价来袭！大品牌质量保证">Philips飞利浦 30074 酷捷LED护眼台灯银色<font
-                                style="color: #ff0000;" name="572758" class="adwords">经典爆款,低价来袭！大品牌质量保证</font></a></div>
-                <div class="p-price"><strong>￥269.00</strong><span id="p572758"></span></div>
-                <div class="extra"><span class="evaluate"><a target="_blank"
-                                                             href="http://item.jd.com/572758.html#comments-list"
-                                                             onclick="log(&quot;search&quot;,&quot;list&quot;,window.location.href,9898,5,572758,3,3,1,2,A)">已有16538人评价</a></span>
-                </div>
-                <div stock="572758" class="stocklist"><span class="st33">北京有货</span></div>
-                <div class="product-follow hide" style="display: none;"><a id="coll572758"
-                                                                           class="btn-coll"><s></s>加关注</a></div>
-                <div class="shop-name" style="display: none;"></div>
-            </div>
-        </li>
     </ul>
 </div>
 <div class="goods-pageBar">

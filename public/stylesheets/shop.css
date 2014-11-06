@@ -1,0 +1,55 @@
+.good-div{
+
+}
+.good-img-div{
+    float: left;
+    width: 351px;
+    height: 351px;
+}
+.good-img-div>img{
+    width: 350px;
+    height: 350px;
+}
+.good-content-div{
+    float: left;
+    height: 351px;
+    width: 640px;
+    margin: 0 2px;
+    border: 1px solid white;
+}
+.good-titile-div{
+    padding: 10px 0 0 10px;
+    height: 35px;
+    overflow: hidden;
+}
+.good-titile-div > h1{
+    font: 700 16px/1.5em Arial,Verdana,"microsoft yahei";
+}
+.good-operation-div{
+    height: 200px;
+    width: 630px;
+    margin: 100px 2px;
+    border: 1px solid white;
+}
+.good-button-div{
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 200px;
+    height: 45px;
+    border: 1px solid red;
+    border-radius: 5px;
+    line-height: 45px;
+    background-color: #ff6318;
+    text-align: center;
+}
+.good-button-div>a{
+    font-size: 25px;
+    color: white;
+    font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu
+}
+.good-misc-div{
+    clear: both;
+    width: 1000px;
+    height: 300px;
+    border: 1px solid green;
+}

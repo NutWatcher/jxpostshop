@@ -38,7 +38,8 @@
     width: 300px;
     min-height: 40px;
     padding: 8px;
-    border: 1px solid gold;
+    border: 1px solid #eee;
+    background-color: white;
 }
 
 .top-content-div-car > ul {

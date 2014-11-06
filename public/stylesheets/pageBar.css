@@ -3,6 +3,9 @@
     line-height: 36px;
     color: #999;
 }
+.goods-pageBar {
+    clear: both;
+}
 .page-bar-count {
     margin: 0 15px 0 30px;
 }

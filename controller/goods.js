@@ -20,3 +20,21 @@ exports.getGoodsList = function(req, res){
         }
     });
 };
+exports.getGood = function(req, res, next){
+    var page = req.query["page"] ;
+    var goodId = req.url.substr(6,req.url.length-11);
+    Goods.getGood(goodId, function(err, data){
+        if (err) {
+            log.error(err);
+            res.status(err.status || 500);
+            res.render('error', {
+                message: err.message,
+                error: err
+            });
+        }
+        else {
+            console.info(data);
+            res.render('shop', { title: '首页' ,goods: data });
+        }
+    });
+};
