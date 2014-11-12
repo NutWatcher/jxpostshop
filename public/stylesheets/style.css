@@ -1,3 +1,6 @@
+*{
+    border: none;
+}
 body {
     margin: 0 auto;
     width: 1000px;
@@ -9,6 +12,11 @@ a {
   color: #00B7FF;
   text-decoration: none;
   font: tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;
+  cursor: pointer;
+}
+a:hover
+{
+    color: #ff6318;
 }
 .goods-li{
     float: left;

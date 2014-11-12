@@ -4,7 +4,7 @@
 function ajaxGetUser(cb){
     $.ajax({
         method: 'post',
-        url: './ajaxGetUser',
+        url: '/ajaxGetUser',
         data: {},
         success: function(msg){
             if (msg.success == false){

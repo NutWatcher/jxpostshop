@@ -11,92 +11,17 @@
             <div id="jieSuanDan" class="top-content-div" style="width: 300px">
                 <a>结算单</a>
                 <div id="jieSuanDanCar" class="top-content-div-car" style="display: none">
-                    一个
+                    <div class="top-content-div-car-top-div">
+                        <span style="float: left"><strong>最近加入的产品：</strong></span>
+                        <a style="float: right">清空结算单</a>
+                    </div>
+                    <ul style="clear: both"></ul>
+                    <div><strong>最近加入的宝贝：</strong></div>
                 </div>
             </div>
         </li>
     </ul>
 </div>
 <script type="text/javascript">
-    topDivInit = function (){
-        ajaxGetUser(function(err, data){
-            if (err){
-                alert(err) ;
-            }
-            else{
-                $('#top-div-username').text(data);
-            }
-        });
-        $('#jieSuanDan').on({
-            'mouseenter': function (e) {
-                e.stopPropagation();
-                $("#jieSuanDanCar").show();
-                ajaxGetUserShopCar(function(err, data){
-                    if (err){
-                        alert(err) ;
-                    }
-                    else{
-                        if (data.length <= 0 ){
 
-                        }
-                        else {
-                            var str = "";
-                            str += "<div><strong>最近加入的宝贝：</strong></div>";
-                            str += "<ul>";
-
-                            for (var i = 0; i < data.length; i++) {
-                                str += "<li>";
-                                str += "<a>" + data[i].name + "</a>";
-                                str += "</li>";
-                            }
-                            str += "</ul>";
-                            str += "<div><strong>最近加入的宝贝：</strong></div>";
-                            $("#jieSuanDanCar").empty();
-                            $('#jieSuanDanCar').append(str);
-                        }
-                    }
-                });
-            },
-            'mouseleave': function (e) {
-                e.stopPropagation();
-                $("#jieSuanDanCar").hide();
-            }
-        });
-    };
-    $(function(){
-        $('#jieSuanDan').on({
-            'mouseenter': function (e) {
-                e.stopPropagation();
-                $("#jieSuanDanCar").show();
-                ajaxGetUserShopCar(function(err, data){
-                    if (err){
-                        alert(err) ;
-                    }
-                    else{
-                        if (data.length <= 0 ){
-
-                        }
-                        else {
-                            var str = "";
-                            str += "<div><strong>最近加入的宝贝：</strong></div>";
-                            str += "<ul>";
-                            for (var i = 0; i < data.length; i++) {
-                                str += "<li>";
-                                str += "<a>" + data[i].name + "</a>";
-                                str += "</li>";
-                            }
-                            str += "</ul>";
-                            str += "<div><strong>最近加入的宝贝：</strong></div>";
-                            $("#jieSuanDanCar").empty();
-                            $('#jieSuanDanCar').append(str);
-                        }
-                    }
-                });
-            },
-            'mouseleave': function (e) {
-                e.stopPropagation();
-                $("#jieSuanDanCar").hide();
-            }
-        });
-    });
 </script>

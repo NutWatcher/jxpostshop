@@ -45,11 +45,55 @@
 .good-button-div>a{
     font-size: 25px;
     color: white;
-    font-family:"Microsoft YaHei",微软雅黑,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu
+    font-family:"Microsoft YaHei","微软雅黑","Microsoft JhengHei","华文细黑",STHeiti,MingLiu
 }
 .good-misc-div{
     clear: both;
     width: 1000px;
     height: 300px;
     border: 1px solid green;
+}
+.shop-dialog{
+    width: 300px;
+    height: 180px;
+    border: 1px solid lightgray;
+    position: fixed;
+    margin:auto;
+    left:0;
+    right:0;
+    bottom:0;
+    top: 0;
+    background-color: white;
+    display: none;
+}
+.shop-dialog-close{
+    float: right;
+}
+.shop-dialog-close > a{
+    font-size: 45px;
+    line-height: 45px;
+}
+.shop-dialog-content{
+    margin-top: 40px;
+    margin-left: 80px;
+    font-family:"Microsoft YaHei","微软雅黑","Microsoft JhengHei","华文细黑",STHeiti,MingLiu;
+}
+.shop-dialog-content > span{
+    font-size: 16px;
+}
+.shop-dialog-goPay{
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    margin-left: 80px;
+    margin-top: 10px;
+    line-height: 30px;
+    font-family:"Microsoft YaHei","微软雅黑","Microsoft JhengHei","华文细黑",STHeiti,MingLiu;
+    border: 1px solid #ff6318;
+    border-radius: 5px;
+    background-color: #ff6318;
+}
+.shop-dialog-goPay > a{
+    color: white;
+    font-size: 15px;
 }
