@@ -46,4 +46,10 @@ topDivInit = function (){
             $("#jieSuanDanCar").hide();
         }
     });
+    $('#jieSuanDanClear').on({
+        'click': function (e) {
+            clearCar();
+            $("#jieSuanDanCar").hide();
+        }
+    });
 };

@@ -4,6 +4,7 @@
 
 
 var goods = require('./controller/goods');
+var account = require('./controller/account');
 /*var view = require('./controllers/view')
     ,adminManage = require('./controllers/adminManage')
     ,c_machine = require('./controllers/C_machine')
@@ -14,6 +15,8 @@ module.exports = function (app) {
 
     app.get('/', goods.getGoodsList);
     app.get('/good/*', goods.getGood);
+
+    app.get('/checkout', account.getCheckout);
     // home page
     /*app.get('/', view.index);
     app.get('/index', view.index);
