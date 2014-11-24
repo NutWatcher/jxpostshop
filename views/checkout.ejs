@@ -3,6 +3,7 @@
 <% include head.ejs %>
 <body>
 <script type="text/javascript">
+    $(function(){operationInit()});
 </script>
 <div id="shop-dialog" class="shop-dialog">
     <div class="shop-dialog-close">
@@ -18,6 +19,9 @@
     </div>
 </div>
 <div class="jieSuan-div">
+    <div class="jieSuan-top-div">
+        <span class="jieSuan-span">我的结算单</span>
+    </div>
     <div class="jieSuan-content-div">
         <div class="jieSuan-content-head-div">
             <div class="jieSuan-content-head-column jieSuan-content-head-goods">
@@ -32,9 +36,42 @@
             <div class="jieSuan-content-head-column jieSuan-content-head-action">
                 <span>操作</span>
             </div>
+            <div class="jieSuan-content-head-column jieSuan-content-head-total">
+                <span>总价</span>
+            </div>
         </div>
         <div class="jieSuan-shopList-div">
+            <div class="jieSuan-goods-div">
+                <div class="jieSuan-goods-column jieSuan-goods">
+                    <div class="jieSuan-goods-img">
+                        <a>
+                            <img src="http://img10.360buyimg.com/n5/jfs/t184/347/2274382853/424679/71b55f62/53c8e563N83d74c15.jpg">
+                        </a>
+                    </div>
+                    <div class="jieSuan-goods-name">
+                        <a>
+                            开始定经费水电费很谨慎的开放式的飞机快死掉了罚款加适量的疯费水电费很谨慎的开放式的飞机快死掉了罚款加适量的疯费水电费很谨慎的开放式的飞机快死掉了罚款加适量的疯费水电费很谨慎的开放式的飞机快死掉了罚款加适量的疯费水电费很谨慎的开放式的飞机快死掉了罚款加适量的疯
+                        </a>
+                    </div>
+                </div>
+                <div class="jieSuan-goods-column jieSuan-goods-price">
+                    <span>6.5</span>
+                </div>
+                <div class="jieSuan-goods-column jieSuan-goods-quantity">
+                    <a class="jieSuan-operation-plus">＋</a>
+                    <input class="jieSuan-goods-quantity-input" type="text" value="3">
+                    <a class="jieSuan-operation-minus">－</a>
+                </div>
+                <div class="jieSuan-goods-column jieSuan-goods-action">
+                    <a>删除</a>
+                </div>
+                <div class="jieSuan-goods-column jieSuan-goods-total">
+                    <span>654</span>
+                </div>
+            </div>
+            <div class="jieSuan-goods-div">
 
+            </div>
         </div>
     </div>
 </div>

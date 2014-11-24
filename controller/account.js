@@ -1,6 +1,11 @@
 var log = require('./errLog');
 var Goods = require('../dao').Goods;
 exports.getCheckout = function(req, res){
+    var aa = 0 ;
+    if (req.cookies["shopCar"] == null){
+        res.render('checkout', { title: '商品结算' ,goods: [] });
+        return ;
+    }
     var shopCar = req.cookies["shopCar"].split("-") ;
     Goods.getGoodsById(shopCar,function(err, data){
         if (err) {
