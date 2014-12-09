@@ -41,36 +41,45 @@
             </div>
         </div>
         <div class="jieSuan-shopList-div">
+            <% for(var i = 0; i < goods.length; i++) { %>
             <div class="jieSuan-goods-div">
                 <div class="jieSuan-goods-column jieSuan-goods">
                     <div class="jieSuan-goods-img">
                         <a>
-                            <img src="http://img10.360buyimg.com/n5/jfs/t184/347/2274382853/424679/71b55f62/53c8e563N83d74c15.jpg">
+                            <img src="<%= goods[i].image %>">
                         </a>
                     </div>
                     <div class="jieSuan-goods-name">
                         <a>
-                            开始定经费水电费很谨慎的开放式的飞机快死掉了罚款加适量的疯费水电费很谨慎的开放式的飞机快死掉了罚款加适量的疯费水电费很谨慎的开放式的飞机快死掉了罚款加适量的疯费水电费很谨慎的开放式的飞机快死掉了罚款加适量的疯费水电费很谨慎的开放式的飞机快死掉了罚款加适量的疯
+                            <%= goods[i].name %>
                         </a>
                     </div>
                 </div>
                 <div class="jieSuan-goods-column jieSuan-goods-price">
-                    <span>6.5</span>
+                    <span><%= goods[i].price %></span>
                 </div>
                 <div class="jieSuan-goods-column jieSuan-goods-quantity">
                     <a class="jieSuan-operation-plus">＋</a>
-                    <input class="jieSuan-goods-quantity-input" type="text" value="3">
+                    <input class="jieSuan-goods-quantity-input" type="text" value="0">
                     <a class="jieSuan-operation-minus">－</a>
                 </div>
                 <div class="jieSuan-goods-column jieSuan-goods-action">
                     <a>删除</a>
                 </div>
                 <div class="jieSuan-goods-column jieSuan-goods-total">
-                    <span>654</span>
+                    <span>0</span>
                 </div>
             </div>
-            <div class="jieSuan-goods-div">
+            <% } %>
+        </div>
+        <div class="jieSuan-totla-div">
 
+            <div class="jieSuan-dialog-goPay f_r">
+                <a href="/checkout">确定＞</a>
+            </div>
+            <div class="jieSuan-totla-content-div f_r">
+                总计：
+                <span id="jieSuan-totalCounts">0</span>
             </div>
         </div>
     </div>

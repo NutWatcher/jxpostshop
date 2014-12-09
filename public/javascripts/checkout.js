@@ -25,12 +25,7 @@ operationInit = function (){
     $(".jieSuan-goods-div .jieSuan-goods-quantity-input").on({
         'change': function(event){
             event.stopPropagation();
-            var input = $(this).siblings("input");
-            var num = parseInt($(input).val());
-            if ( num > 0 ){
-                $(input).val(num - 1);
-                changeTotal($(this).parent());
-            }
+            changeTotal($(this).parent());
         }
     });
 };
@@ -39,7 +34,18 @@ changeTotal = function(quantity){
     var price = parseFloat($(quantity).siblings('.jieSuan-goods-price').children('span').text());
     var total = num * price ;
     $(quantity).siblings('.jieSuan-goods-total').children('span').text(total);
-    console.log(num);
+    changeTotalCounts();
+    /*console.log(num);
     console.log(price);
-    console.log(total);
+    console.log(total);*/
+}
+changeTotalCounts = function(){
+    var totalCounts = parseFloat($('#jieSuan-totalCounts').text());
+    var eachCount = $('.jieSuan-goods-total');
+    var num = 0 ;
+    for ( var i = 0 ; i < eachCount.length ; i ++ ){
+        num += parseFloat($(eachCount[i]).text());
+    }
+    console.log(num);
+    $('#jieSuan-totalCounts').text(num);
 }

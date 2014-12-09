@@ -42,14 +42,13 @@
 }
 
 .jieSuan-shopList-div{
-    height: 350px;
     clear: both;
 }
 .jieSuan-goods-div{
     min-height: 65px;
     overflow:auto;
     background-color: #fffdee;
-    border-bottom:  1px dashed red;
+    border-bottom:  1px solid #dddddd;
     padding: 5px 0;
 }
 .jieSuan-goods-column{
@@ -67,6 +66,10 @@
     float: left;
     border: 1px solid #ddd;
     margin-left: 10px;
+}
+.jieSuan-goods-img>a>img{
+    width: 50px;
+    height: 50px;
 }
 .jieSuan-goods-name{
     float: left;
@@ -92,4 +95,37 @@
 }
 .jieSuan-goods-total{
     width: 90px;
+}
+.jieSuan-totla-div{
+    height: 48px;
+    line-height: 48px;
+    background-color: #f7f7f7;
+}
+.jieSuan-totla-content-div{
+    margin-right: 20px;
+}
+.jieSuan-totla-content-div > span{
+    vertical-align: middle;
+    color: #e4393c;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: Verdana,Arial;
+}
+.f_r{
+    float: right;
+}
+.jieSuan-dialog-goPay{
+}
+.jieSuan-dialog-goPay > a{
+    display: block;
+    font-family:"Microsoft YaHei","微软雅黑","Microsoft JhengHei","华文细黑",STHeiti,MingLiu;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #e43f42;
+    height: 48px;
+    padding:0 50px;
+}
+.jieSuan-dialog-goPay > a:hover{
+    background-color: #e45a51;
 }
