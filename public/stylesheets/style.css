@@ -18,18 +18,7 @@ a:hover
 {
     color: #ff6318;
 }
-.goods-li{
-    float: left;
-    width: 247px;
-}
 ul{
     list-style: none;
-}
-.lh-wrap{
-    width: 200px;
-}
-.p-name {
-    height: 3em;
-    word-wrap: break-word;
-    overflow: hidden;
+    padding: 0;
 }

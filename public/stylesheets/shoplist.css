@@ -1,0 +1,57 @@
+.shoplist-ul{
+    height: auto;
+}
+.shoplist-li{
+    float: left;
+    width: 234px;
+    height: 400px;
+}
+.shoplist-li-wrap:hover{
+    border-color: #ddd;
+}
+.shoplist-li-wrap{
+    padding: 38px 5px 12px;
+    border: 2px solid #fff;
+}
+.p-price{
+    margin: 10px 0;
+}
+.p-price strong{
+    font-weight: 400;
+    font-family: Verdana;
+    font-size: 18px;
+    color: #e4393c;
+}
+.p-name {
+    height: 36px;
+    line-height: 18px;
+    word-wrap: break-word;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.p-name >a{
+    font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+    color: #666;
+}
+.p-name >a:hover{
+    font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+    color: #e4393c;
+}
+.p-operate{
+    padding: 0 45px;
+}
+.p-o-addcart{
+    display: block;
+    font: 12px/150% Arial,Verdana,"\5b8b\4f53";
+    height: 23px;
+    line-height: 23px;
+    border: 1px solid #DDD;
+    background: #fff;
+    color: #333;
+    text-align: center;
+}
+.p-o-addcart:hover{
+    border: 1px solid #e4393c;
+    color: #e4393c;
+}
+

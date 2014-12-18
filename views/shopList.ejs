@@ -3,24 +3,28 @@
 <% include head.ejs %>
 <body>
 <% include plugin/top-bar.ejs %>
-<div id="plist" class="m plist-n7 prebuy">
-    <ul class="list-h">
+<div id="plist" class="">
+    <ul class="shoplist-ul">
         <% for(var i = 0; i < goods.length; i++) { %>
-        <li class="goods-li">
-            <div class="lh-wrap">
+        <li class="shoplist-li">
+            <div class="shoplist-li-wrap">
                 <div class="p-img">
                     <a target="_blank"
                        href="<%= goods[i].href%>">
                         <img width="220px" height="220px" src="<%= goods[i].image %>"/>
                     </a>
                 </div>
+                <div class="p-price"><strong>￥<%= goods[i].price %></strong></div>
                 <div class="p-name">
                     <a target="_blank"
                        href="<%= goods[i].href%>">
                         <%= goods[i].name %>
                     </a>
                 </div>
-                <div class="p-price"><strong><%= goods[i].price %></strong></div>
+                <div class="p-operate">
+                        <a onclick="addToCar(<%= goods[i].id %>)" target="_blank" class="p-o-addcart">加入结算单</a>
+                </div>
+
             </div>
         </li>
         <% } %>
