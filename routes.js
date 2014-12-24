@@ -15,6 +15,7 @@ module.exports = function (app) {
 
     app.get('/', goods.getGoodsList);
     app.get('/good/*', goods.getGood);
+    app.post('/goodsbyid', goods.getGoodsById);
 
     app.get('/checkout', account.getCheckout);
     // home page

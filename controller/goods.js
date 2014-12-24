@@ -38,3 +38,21 @@ exports.getGood = function(req, res, next){
         }
     });
 };
+exports.getGoodsById = function(req, res, next){
+    var shopCar = req.body["shops"];
+    if (shopCar == null || shopCar == ""){
+        return res.json({ success:true ,data: [] });
+    }
+    var shop_ids = shopCar.split("-") ;
+    Goods.getGoodsById(shop_ids, function(err, data){
+        if (err) {
+            log.error(err);
+            res.status(err.status || 500);
+            res.json({ success:false ,data: err.message });
+        }
+        else {
+            console.info(data);
+            res.json({ success:true ,data: data });
+        }
+    });
+};

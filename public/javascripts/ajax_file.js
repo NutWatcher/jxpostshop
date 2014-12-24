@@ -19,8 +19,30 @@ function ajaxGetUser(cb){
         }
     })
 };
-function ajaxGetUserShopCar(cb){
-    cb(null, [{"name":"一个"},{"name":"2个"}]);
+function ajaxGetUserShopCar(shopCar, cb){
+    if (shopCar == null || shopCar == ""){
+        cb(null, []);
+    }
+    else{
+        $.ajax({
+            method: 'post',
+            url: '/goodsbyid',
+            data: {
+                shops : shopCar
+            },
+            success: function(msg){
+                if (msg.success == false){
+                    cb(msg.data, msg) ;
+                }
+                else{
+                    cb(null, msg.data);
+                }
+            },
+            error: function(xmlHttpRequest, err){
+                cb(err.toString());
+            }
+        })
+    }
     /*$.ajax({
         method: 'post',
         url: './ajaxGetUser',

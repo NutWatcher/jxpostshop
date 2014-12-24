@@ -14,10 +14,10 @@ exports.getGood = function (type_id, cb) {
         "misc":""});
 }
 exports.getGoodsById = function (shop_ids, cb) {
-    cb(null,[{"name":"一个","price":30,"image":"/images/good1.jpg","href":"http://localhost:3000/good/00001.html"},
-        {"name":"2个","price":60.9,"image":"/images/good1.jpg","href":"http://localhost:3000/good/00002.html"},
-        {"name":"2个","price":60,"image":"/images/good1.jpg","href":"http://localhost:3000/good/00002.html"},
-        {"name":"2个","price":60,"image":"/images/good1.jpg","href":"http://localhost:3000/good/00002.html"},
-        {"name":"2个","price":60,"image":"/images/good1.jpg","href":"http://localhost:3000/good/00002.html"},
-        {"name":"2个","price":60,"image":"/images/good1.jpg","href":"http://localhost:3000/good/00002.html"}]);
+    cb(null,[{"id":"12580","name":"一个","price":30,"image":"/images/good1.jpg","href":"http://localhost:3000/good/00001.html"},
+        {"id":"125801","name":"2个","price":60.9,"image":"/images/good1.jpg","href":"http://localhost:3000/good/00002.html"},
+        {"id":"125802","name":"2个","price":60,"image":"/images/good1.jpg","href":"http://localhost:3000/good/00002.html"},
+        {"id":"125803","name":"2个","price":60,"image":"/images/good1.jpg","href":"http://localhost:3000/good/00002.html"},
+        {"id":"125804","name":"2个","price":60,"image":"/images/good1.jpg","href":"http://localhost:3000/good/00002.html"},
+        {"id":"125805","name":"2个","price":60,"image":"/images/good1.jpg","href":"http://localhost:3000/good/00002.html"}]);
 }

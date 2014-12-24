@@ -30,7 +30,7 @@ function addToCar(id){
     else{
         var shops = shopCar.split("-") ;
         var flag = 0 ;
-        for ( var i = 0 ; i < shops ; i ++ ){
+        for ( var i = 0 ; i < shops.length ; i ++ ){
             if (shops[i] == id){
                 flag = 1 ;
             }

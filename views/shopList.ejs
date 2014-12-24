@@ -3,6 +3,11 @@
 <% include head.ejs %>
 <body>
 <% include plugin/top-bar.ejs %>
+<script type="text/javascript">
+    $(function(){
+        topDivInit() ;
+    });
+</script>
 <div id="plist" class="">
     <ul class="shoplist-ul">
         <% for(var i = 0; i < goods.length; i++) { %>
